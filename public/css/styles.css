@@ -1,0 +1,125 @@
+	html {
+	  position:absolute;
+	  top:0;right:0;bottom:0;left:0;
+	  background:#222 url("../images/family.jpg") no-repeat center center fixed;
+	  -webkit-background-size:cover;
+	  -moz-background-size:cover;
+	  -o-background-size:cover;
+	  background-size:cover;
+	}
+
+	body {
+	  font:normal 1em/1.4 'Bradley Hand ITC', sans-serif;
+	  color:#FF69B4;
+	}
+
+	  body:after {
+		content:"";
+		position:absolute;
+		right:0;bottom:0;left:0;
+		height:160px;
+		background:linear-gradient(to bottom,  rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.5) 100%);
+		z-index:1;
+	  }
+
+	div {
+	  height:250px;
+	  margin:auto;
+	  position:absolute;
+	  
+	  text-align:center;
+	  text-transform:uppercase;
+	  transform: scale(0.8);
+	}
+
+	h1 {
+	  font-size:5.625em;
+	  font-weight:800;
+	  line-height:1em;
+	  letter-spacing:0.035em;
+	  margin:0 0 10px 0;
+	}
+
+	  h1 span {
+		display:block;
+		font-weight:300;
+		/*letter-spacing:0.06em;*/
+		margin-left:3px;
+	  }
+
+	h2 {
+	  font-family:'Unica One', cursive;
+	  font-size:1.125em;
+	  font-weight: normal;
+	  letter-spacing: -0.005em;
+	  color:#ccc;
+	  margin:0;
+	}
+
+	hr {
+	  width:30px;
+	  border:none;
+	  padding:10px 0 0 0;
+	  border-top:1px solid #B8A279;
+	  margin:20px auto 0 auto;
+	}
+
+	ul {
+	  position:fixed;
+	  bottom:30px;left:40px;right:40px;
+	  z-index:2;
+	  list-style:none;
+	  margin:0;
+	  padding:0;
+	  text-align:center;
+	}
+
+	  ul li {display:inline-block;}
+
+		ul li a {
+		  padding:6px 4px;
+		  font-size:1.688em;
+		  font-weight:700;
+		  color:#00bfff;
+		  text-transform:uppercase;
+		  text-decoration:none;
+		}
+
+		ul li a:hover {
+		  -webkit-animation:flash 400ms forwards;
+		  animation:flash 400ms forwards;
+		  color:#BBA279;
+		}
+
+	@media (min-width:520px) {
+
+	  div {transform: scale(1);}
+
+	}
+
+	@media (min-width:720px) {
+
+	  div {height:160px;}
+
+	  /*h1 {word-spacing:-30px;}*/
+
+		h1 span {display:inline;}
+
+	  ul li a {padding:4px 6px;}
+	  
+	}
+
+	@-webkit-keyframes flash {
+	  0%   {color:#666;}
+	  10%  {color:#fff;}
+	  100% {color:#BBA279;}
+	}
+
+	@keyframes flash {
+	  0%   {color:#666;}
+	  10%  {color:#fff;}
+	  100% {color:#BBA279;}
+	}
+
+	::-moz-selection {background:#333;text-shadow:none;}
+	::selection {background:#333;text-shadow:none;}

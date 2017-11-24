@@ -1,0 +1,6 @@
+{
+  "name": "Node.js Sample",
+  "description": "Nishath Korrapati Website",
+  "repository":"https://github.com/nishanth7777/sathvika-website.git",
+  "keywords": ["node", "express", "static"]
+}
